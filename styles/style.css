@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "inter";
+}
+body {
+  background-color: black;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+p {
+  color: rgba(255, 255, 255, 0.65);
+}
+section {
+  margin: 100px 0;
+}
+main {
+  border: 1px solid red;
+}
+
+/* Navbar */
+.brand {
+  color: rgb(230, 83, 60);
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-link {
+  list-style: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.active {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(230, 83, 60);
+}
+
+/* Banner */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 50px;
+}
+
+.banner-title {
+  color: white;
+  font-size: 5.5rem;
+}
+.shape {
+  font-size: 5.5rem;
+  font-family: "Style Script", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+.banner-btn-1 {
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+.banner-btn-2 {
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 15px;
+}
+
+.banner-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  padding: 15px 25px;
+  color: white;
+}
+
+.box-1 {
+  position: absolute;
+  top: 285px;
+  right: 300px;
+}
+.box-2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 180px;
+  right: 660px;
+}
+.box h3 {
+  font-size: 2.5rem;
+}
+.box p {
+  color: rgba(255, 255, 255, 0.65);
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(230, 83, 60);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Habit styles */
+.habit {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.habit-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  gap: 20px;
+}
+.habit-content > h1 {
+  margin-bottom: 5px !important;
+}
+.habit-circle h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.habit > div {
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+}
+
+.habit-circle {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  text-align: center;
+}
+
+.habit-circle img {
+  border-radius: 50%;
+}
+
+/* Run styles */
+.run {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 50px 100px;
+}
+
+.run-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+  align-items: start;
+}
+
+.run-content h1{
+    text-align: start;
+}
+
+.run-img {
+  /* padding: 0 100px; */
+  padding: 50px;
+}
+.run-img > img {
+  width: 60%;
+  border-radius: 12px;
+  /* margin: 400px; */
+  float: right;
+
+}
