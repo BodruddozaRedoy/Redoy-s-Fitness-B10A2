@@ -6,6 +6,7 @@
   padding: 0;
   font-size: 16px;
   font-family: "inter";
+  color: white;
 }
 body {
   background-color: black;
@@ -16,6 +17,10 @@ body {
 .container {
   width: 80%;
   /* margin: 0 auto; */
+}
+
+.visibility-hidden {
+  visibility: hidden;
 }
 
 header {
@@ -44,7 +49,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 /* Navbar */
@@ -70,7 +74,7 @@ nav {
   border-radius: 30px;
   border: 1px solid rgba(211, 211, 211, 0.329);
 }
-.nav-links > .nav-active{
+.nav-links > .nav-active {
   /* padding: 0; */
   background-color: rgb(230, 83, 60);
   margin-left: 5px;
@@ -87,7 +91,6 @@ nav {
   color: white;
   font-weight: 400;
 }
-
 
 .active {
   padding: 10px 20px;
@@ -241,8 +244,8 @@ nav {
   padding-right: 310px;
 }
 
-.run-content h1{
-    text-align: start;
+.run-content h1 {
+  text-align: start;
 }
 
 .run-img {
@@ -254,7 +257,145 @@ nav {
   border-radius: 12px;
   /* margin: 400px; */
   float: right;
+}
+
+/* Training section  */
+.collage-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.item {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.item-1 {
+  grid-column: span 1;
+  background-image: url("../images/exercise1.jpg");
+}
+.item-2 {
+  grid-column: span 1;
+  background-image: url("../images/exercise2.png");
+}
+.item-3 {
+  grid-column: span 1;
+  background-image: url("../images/exercise3.png");
+}
+.item-4 {
+  grid-column: span 1;
+  background-image: url("../images/exercise4.png");
+}
+.item-5 {
+  grid-column: span 1;
+  background-image: url("../images/exercise5.jpg");
+}
+.item-6 {
+  grid-column: span 1;
+  background-image: url("../images/exercise6.jpg");
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.item1 .overlay {
+  background: rgba(0, 255, 255, 0.5); /* Cyan overlay */
+}
+
+/* BMI section */
+.bmi-calculator {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+.bmi-content {
+  background: rgb(34, 34, 34);
+  display: flex;
+  padding: 50px 0;
+  margin-top: 30px !important;
+  width: 100% !important;
 
 }
 
+.bmi-calculator > h1 {
+  text-align: start;
+}
 
+.bmi-calculator > p {
+  width: 90%;
+}
+
+.calc-bmi input {
+  border-radius: 8px;
+  height: 48px;
+  padding: 5px 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px;
+}
+.bmi-calc-chart{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bmi-calc-chart table{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+.bmi-calc-chart table th{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: start;
+}
+.bmi-calc-chart table td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.calc-input{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 20px;
+}
+.calc-span{
+  grid-column:span 2;
+}
+.calc-bmi{
+  width: 700px;
+  padding-right: 20rem;
+}
+.bmi-content h2{
+  font-size: 28px;
+  font-weight: 900;
+  margin: 30px 0;
+}
+.bmi-btn{
+  padding: 15px 60px;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Meet our team style */
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
