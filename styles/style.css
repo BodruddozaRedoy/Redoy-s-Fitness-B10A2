@@ -394,8 +394,159 @@ nav {
 }
 
 /* Meet our team style */
+.team-collage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 18px;
+
+}
 .team{
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
+
+.team-pic{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0 30px 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer1.png");
+
+  
+}
+
+.team-pic h3{
+  font-size: 28px;
+  filter: brightness(100%) !important;
+
+}
+
+.team-pic p{
+  font-size: 18px;
+  filter: brightness(100%);
+
+}
+.team-content{
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+
+
+.team-1{
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer1.png");
+  
+
+}
+.team-2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer2.png");
+
+}
+.team-3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer3.png");
+
+
+}
+.team-4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer4.png");
+}
+.team-5{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer5.png");
+
+}
+.team-6{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("../images/trainer6.png");
+
+}
+
+/* Fitness styles */
+footer{
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 80%;
+  margin: 100px 200px;
+  
+}
+.footer-logo{
+  padding-right: 280px;
+}
+.footer-logo h1{
+  font-size: 80px;
+  color: rgb(230, 83, 60);
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.footer-logo p{
+  font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+}
+
+.footer-content h3{
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.footer-content li{
+  font-size: 23px;
+  line-height: 120%;
+  list-style: none;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+.footer-end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-end hr{
+  /* margin: 40px 0; */
+  width: 1524px;
+  border: 1px solid rgba(211, 211, 211, 0.329);
+  
+
+}
+
+.footer-end p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin: 60px 0;
+
+}
+
+
