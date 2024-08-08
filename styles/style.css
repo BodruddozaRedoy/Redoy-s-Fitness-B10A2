@@ -52,7 +52,7 @@ main {
 }
 
 .fa-bars{
-  /* display: none; */
+  display: none;
 }
 
 /* Navbar */
@@ -554,3 +554,28 @@ letter-spacing: 0.3px;
 }
 
 
+
+
+/* Responsive layout */
+
+@media (max-width: 576px) {
+  .nav-links{
+    display: none;
+  }
+  .brand{
+    font-size: 3rem;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  .fa-bars{
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  
+  
+  .run, .habit, .bmi-calculator, .bmi-content, .team, .training, footer{
+    display: none;
+  }
+}
