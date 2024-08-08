@@ -132,6 +132,7 @@ nav {
   padding: 20px 60px;
   border-radius: 30px;
   border: none;
+  background-color: rgb(230, 83, 60);
 }
 .banner-btn-2 {
   padding: 20px 60px;
@@ -573,6 +574,44 @@ letter-spacing: 0.3px;
     display: inline-block;
     font-size: 1.5rem;
   }
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-content{
+    padding: 0;
+  }
+  .shape{
+    font-size: 3rem;
+  }
+  .banner-title{
+    font-size: 3rem;
+    text-align: start;
+  }
+  .banner-btn{
+    display: flex;
+  }
+  .banner-btn-1{
+    padding: 15px 20px;
+  }
+  .banner-btn-2{
+    padding: 15px 20px;
+    
+  }
+  .box{
+    padding: 10px 15px;
+  }
+  .box-1{
+  top: 600px;
+  right: 40px;
+  }
+  .box-2{
+    bottom: 0;
+    right: 0;
+
+  }
+  
   
   
   .run, .habit, .bmi-calculator, .bmi-content, .team, .training, footer{
