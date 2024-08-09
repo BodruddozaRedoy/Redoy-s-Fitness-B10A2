@@ -51,8 +51,9 @@ main {
   align-items: center;
 }
 
-.fa-bars{
-  display: none;
+nav i{
+  display: none !important;
+  
 }
 
 /* Navbar */
@@ -211,6 +212,9 @@ nav {
 .habit > div {
   margin-top: 80px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 80px;
 }
 
@@ -230,6 +234,7 @@ nav {
 /* Run styles */
 .run {
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
@@ -560,6 +565,9 @@ letter-spacing: 0.3px;
 /* Responsive layout */
 
 @media (max-width: 576px) {
+  main{
+    width: 100%;
+  }
   .nav-links{
     display: none;
   }
@@ -571,7 +579,7 @@ letter-spacing: 0.3px;
     align-items: center;
   }
   .fa-bars{
-    display: inline-block;
+    display: inline-block !important;
     font-size: 1.5rem;
   }
   .banner{
@@ -607,14 +615,53 @@ letter-spacing: 0.3px;
   right: 40px;
   }
   .box-2{
-    bottom: 0;
-    right: 0;
+    bottom: -109px;
+    right: 209px;
 
+  }
+  section{
+    margin: 40px 0;
+  }
+  .habit{
+    gap: 10px;
+  }
+  .habit-content{
+    width: 100%;
+  }
+  .habit-content h1{
+    font-size: 2rem;
+  }
+  .habit > div{ 
+    gap: 30px;
+  }
+
+
+  .run{
+    flex-direction: column;
+    /* padding: 50px; */
+    margin: 0 !important;
+    width: 100%;
+  }
+  .run-content{
+    padding: 0;
+  }
+  .run-btn{
+    width: 80%;
+    margin: 0 auto;
+    /* margin  : 10px 20px; */
+  }
+  .run-content > h1{
+    font-size: 50px;
+  }
+  .run-img > img{
+    margin-top: 20px;
+    width: 100%;
+    float: none;
   }
   
   
   
-  .run, .habit, .bmi-calculator, .bmi-content, .team, .training, footer{
+  .bmi-calculator, .bmi-content, .team, .training, footer{
     display: none;
   }
 }
