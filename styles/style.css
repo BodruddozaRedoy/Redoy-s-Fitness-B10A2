@@ -30,11 +30,11 @@ body {
 }
 
 header {
-  /* background: linear-gradient(
+  background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
-  ); */
+  ); 
 }
 
 h1 {
@@ -592,6 +592,13 @@ letter-spacing: 0.3px;
   }
   .container{
     width: 90%;
+  }
+  header{
+    background: linear-gradient(
+    40deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); 
   }
   
   .nav-links{
