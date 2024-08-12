@@ -34,8 +34,12 @@ header {
     180deg,
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
+<<<<<<< HEAD
   );
   
+=======
+  ); 
+>>>>>>> 0e846994d7ae85a48519396f4b7b1bfed8733cfe
 }
 
 h1 {
@@ -677,6 +681,13 @@ letter-spacing: 0.3px;
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0) 100%
   );
+  }
+  header{
+    background: linear-gradient(
+    40deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); 
   }
   
   .nav-links{
